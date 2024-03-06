@@ -1,0 +1,76 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'monospace';
+	text-decoration: none;
+    	
+
+}
+.navbar{
+    		background: white;
+    		
+    		font-family: monospace;
+    		padding-right: 15px;
+
+    	}
+    	.navdiv{
+    		display: flex;
+    		align-items: center;
+    		justify-content: space-between;
+    	}
+    	.logo{
+    		margin-top: 13px;;
+    		margin-bottom: 13px;
+    		margin-left: 13px;
+    		font-size: 35px;
+    		font-weight: 600;
+    		color: black;
+    	}
+    	ul{
+    		margin-top: 13px;;
+    		margin-bottom: 13px;
+    		margin-top: 20px;;
+    	}
+
+    	li{
+    		list-style: none;display: 
+    		inline-block;
+    	}
+    	li a{
+    		color: black;
+    		font-size:18px;
+    		font-weight: bold;
+    		margin-right: 25px;
+    	}
+    	button{
+    		background-color: maroon;
+    		margin-left: 10px;
+    		border-radius: 10px;
+    		padding: 10px;
+    		width: 120px;
+    	}
+    	button a{
+    		color:white;
+    		font-weight: bold;
+    		font-size: 15px;
+    	}
+
+    
+.Container{
+	width: 100%;
+	height: 100vh;
+	background-color: aliceblue;
+	background-image: url("img/s.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.secondbutton{
+    		margin-top: 10px;
+    		background-color: transparent;
+    		background-color: rgba(255, 255, 255, 0.5); 
+    		color:black;
+    		font-weight: bold;
+    		font-size: 15px;
+    	}
+    	

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+<style type="text/css">
+		*{
+		padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'monospace';
+	text-decoration: none;
+	    }
+	    .navbar3{
+	    	position: fixed;
+	    	top: 0;
+	    	width: 100%;
+	    	background: white;
+    		font-family: monospace;
+    		padding-right: 15px;
+    		 z-index: 999;
+	    }
+	     .Container3{
+	    	width: 100.5%;
+			height: 200vh;
+			background-color: whitesmoke;
+			background-image: url("img/s.jpg");
+    		background-size: cover;
+    		background-position: center;
+    	}
+	    .navdiv3{
+	    	display: flex;
+    		align-items: center;
+    		justify-content: space-between;
+    		z-index: 999;
+	    }
+	    .logo3{
+	    	margin-top: 13px;;
+    		margin-bottom: 13px;
+    		margin-left: 13px;
+    		font-size: 35px;
+    		font-weight: 600;
+    		color: black;
+    		z-index: 999;
+	    }
+
+	    .ul3{
+	    	margin-top: 13px;;
+    		margin-bottom: 13px;
+    		margin-top: 20px;;
+	    }
+	    .li3{
+	    	list-style: none;display: 
+    		inline-block;
+	    }
+	    .li3 a{
+	    	color: black;
+    		font-size:18px;
+    		font-weight: bold;
+    		margin-right: 25px;
+	    }
+	    .button3{
+	    	background-color: maroon;
+    		margin-left: 10px;
+    		border-radius: 10px;
+    		padding: 10px;
+    		width: 120px;
+	    }
+	    .button3 a{
+	    	color:white;
+    		font-weight: bold;
+    		font-size: 15px;
+	    }
+
+	    .white-panel {
+        	margin-top: 190px;
+        	margin-left: 7px;
+            position: absolute;
+            top: 12vh;
+            left: 0;
+            width: 201vh;
+            height: 28%;
+           background-image: url("img/malagos.jpg");
+           background-size: cover;
+           opacity: 1;
+           border: ridge;
+           box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5); 
+            z-index: 0;
+        }
+        .white-panel1{
+    	margin-top: 380px;
+        	margin-left: 7px;
+            position: absolute;
+            top: 13vh;
+            left: 0;
+            width: 201vh;
+            height: 28%;
+           background-image: url("img/ca.jpg");
+           background-size: cover;
+           opacity: 0.8;
+           border: ridge;
+           box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5); 
+            z-index: 0;
+    }
+
+ .white-panel2{
+    	margin-top: 570px;
+        	margin-left: 7px;
+            position: absolute;
+            top: 14vh;
+            left: 0;
+            width: 201vh;
+            height: 28%;
+           background-image: url("img/OIP.jpg");
+           background-size: cover;
+           opacity: 1;
+           border: ridge;
+           box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5); 
+            z-index: 0;
+    }
+
+ .white-panel3{
+    	margin-top: 760px;
+        	margin-left: 7px;
+            position: absolute;
+            top: 15vh;
+            left: 0;
+            width: 201vh;
+            height: 28%;
+           background-image: url("img/bone2.jpg");
+           background-size: cover;
+           opacity: 1;
+           border: ridge;
+           box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5); 
+            z-index: 0;
+    }
+    .white-panel4{
+    	margin-top: 950px;
+        	margin-left: 7px;
+            position: absolute;
+            top: 16vh;
+            left: 0;
+            width: 201vh;
+            height: 28%;
+           background-image: url("img/croc.jpg");
+           background-size: cover;
+           opacity: 0.8;
+           border: ridge;
+           box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5); 
+            z-index: 0;
+    }
+     .panel-content{
+     position: absolute;
+     top: 45vh;
+     left: 50vh;
+     text-align: justify;
+     color: white;
+     }
+     .panel-content1{
+     position: absolute;
+     top: 75vh;
+     left: 50vh;
+     text-align: justify;
+     color: white;
+     }
+      .panel-content2{
+     position: absolute;
+     top: 105vh;
+     left: 50vh;
+     text-align: justify;
+     color: white;
+     }
+     .panel-content3{
+     position: absolute;
+     top: 136vh;
+     left: 50vh;
+     text-align: justify;
+     color: white;
+     }
+
+.panel-content4{
+     position: absolute;
+     top: 166vh;
+     left: 50vh;
+     text-align: justify;
+     color: white;
+     }
+
+    .is{
+    	position: absolute;
+    	line-height: 1.5;
+    top: 25vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 20px;
+    color: black;
+    }
+     .ex{
+        	position: absolute;
+    top: 15vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 20px;
+    color: black;
+    font-weight: bold;
+        }
+    
+
+	</style>
+
+</head>
+<body>
+<div class="Container3">
+
+	<div class="white-panel"></div>
+	<div class="white-panel1"></div>
+	<div class="white-panel2"></div>
+	<div class="white-panel3"></div>
+	<div class="white-panel4"></div>
+      
+	<nav class="navbar3">
+		<div class = "navdiv3">
+			<div class ="logo3"><p>Davao City</p></div>
+			<ul class ="ul3">
+				<li class = "li3"><a href="davao.html">Home</a></li>
+				<li class = "li3"><a href="history.html">History</a></li>
+				<li class = "li3"><a href="geography.html">Geography</a></li>
+				<li class = "li3"><a href="wheretogo.html">Attractions and Tourism</a></li>
+				<li class = "li3"><a href="demography.html">Demography/Economy</a></li>
+				<li class = "li3"><a href="univ.html">Schools/University</a></li>
+				<a href="https://www.youtube.com/watch?v=KeouUD65WoU" target="_blank">
+    			<button class="button3">Learn More</button>
+				</a>
+			</ul>
+			
+		</div>
+
+		
+
+	</nav>
+
+	 <h1 class ="ex">Explore Davao City: Must-Visit Tourist Spots</h1>
+	 <div class="is">
+	 <center><p>Davao City, located in the southern part of the Philippines,</p></center>
+	 <center><p>is a vibrant and captivating destination that beckons travelers with its natural beauty, rich culture,and warm hospitality.Let’s dive into an introduction to this enchanting city</p></center>
+     </div>
+     <div style="float: left;">
+    <img src="img/malagos2.jpg" width="300" height="160" style="margin-top: 42.7vh; margin-left: 16px; position: absolute; border: ridge; padding: 1vh; background-color: white;" />
+	</div>
+
+	<div style="float: left;">
+    <img src="img/e.jpg" width="300" height="160" style="margin-top: 73.2vh; margin-left: 16px; position: absolute; border: ridge; padding: 1vh; background-color: white;" />
+	</div>
+
+	<div style="float: left;">
+    <img src="img/m.jpg" width="300" height="160" style="margin-top: 103.5vh; margin-left: 16px; position: absolute; border: ridge; padding: 1vh; background-color: white;" />
+	</div>
+
+	<div style="float: left;">
+    <img src="img/bone.jpg" width="300" height="160" style="margin-top: 134vh; margin-left: 16px; position: absolute; border: ridge; padding: 1vh; background-color: white;" />
+	</div>
+
+	<div style="float: left;">
+    <img src="img/croc2.jpg" width="300" height="160" style="margin-top: 164.4vh; margin-left: 16px; position: absolute; border: ridge; padding: 1vh; background-color: white;" />
+	</div>
+
+
+<div class="panel-content">
+        <p><strong><i>Malagos Garden Resort</i></strong><br>
+        	<br>
+            <ul>
+                <li style="margin-left: 4vh; margin-right: 5vh;"><strong>Location:</strong> Diversion Road, Riverfront, Corporate City, Davao City, Davao Region, 8000.</li>
+                <li style="margin-left: 4vh;margin-right: 5vh;"><strong>Description:</strong> Malagos Garden Resort is an agri-ecotourism haven that invites travelers and locals to reconnect with nature. Set in a sustainable farm environment, the resort offers an all-inclusive experience—from dining and accommodation to recreation and wellness activities. Guests can immerse themselves in the lush greenery, enjoy farm-fresh meals, and unwind in a serene setting. </li>
+            </ul>
+        </p>
+    </div>
+
+<div class="panel-content1">
+	 <p><strong><i>Philippine Eagle Center</i></strong></p>
+	 <br>
+	 <ul>
+	 	<li style="margin-left:4vh; margin-right: 5vh;"><strong>Location:</strong> Foothills of Mt. Apo in Malagos, Baguio District, Davao City.</li>
+	 	<li style="margin-left:4vh; margin-right: 5vh;"><strong>Description:</strong> The Philippine Eagle Center (PEC) serves as a conservation breeding facility for the critically endangered Philippine Eagle and other birds of prey. Operated by the Philippine Eagle Foundation (PEF), it aims to protect these majestic birds and their rainforest habitat. Visitors can observe these magnificent creatures up close and learn about conservation efforts. </li>
+	 </ul>
+</div>
+
+<div class="panel-content2">
+	 <p><strong><i>Mount Apo</i></strong></p>
+	 <br>
+	 <ul>
+	 	
+	 	<li style="margin-left:4vh; margin-right: 5vh;"><strong>Description:</strong>As the highest mountain in the Philippines, Mount Apo stands tall and proud. Adventurers can embark on challenging treks to its summit, surrounded by breathtaking landscapes. The journey rewards hikers with panoramic views, lush forests, and a sense of accomplishment. </li>
+	 </ul>
+</div>
+
+<div class="panel-content3">
+	 <p><strong><i>D’ Bone Collector Museum</i></strong></p>
+	 <br>
+	 <ul>
+	 	
+	 	<li style="margin-left:4vh; margin-right: 5vh;"><strong>Description:</strong>This intriguing museum showcases a diverse collection of animal specimens from around the world. From ocean depths to the skies, visitors can marvel at over 650 displays, including whale and dolphin skeletons. It’s an educational and fascinating experience for both young and old.  </li>
+	 </ul>
+</div>
+
+<div class="panel-content4">
+	 <p><strong><i>Davao Crocodile Park</i></strong></p>
+	 <br>
+	 <ul>
+	 	
+	 	<li style="margin-left:4vh; margin-right: 5vh;"><strong>Description:</strong>Get up close and personal with reptilian wonders at the Davao Crocodile Park. From saltwater crocodiles to exotic snakes, this educational park offers thrilling shows, wildlife encounters, and a chance to appreciate the diversity of our planet. </li>
+	 </ul>
+</div>
+
+</div>
+
+</body>
+</html>

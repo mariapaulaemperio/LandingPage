@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+<style type="text/css">
+		*{
+		padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'monospace';
+	text-decoration: none;
+	    }
+	    .navbar3{
+	    	position: fixed;
+	    	top: 0;
+	    	width: 100%;
+	    	background: white;
+    		font-family: monospace;
+    		padding-right: 15px;
+    		 z-index: 999;
+	    }
+	    .navdiv3{
+	    	display: flex;
+    		align-items: center;
+    		justify-content: space-between;
+	    }
+	    .logo3{
+	    	margin-top: 13px;;
+    		margin-bottom: 13px;
+    		margin-left: 13px;
+    		font-size: 35px;
+    		font-weight: 600;
+    		color: black;
+	    }
+	    .Container3 {
+    position: relative; 
+    width: 100.5%;
+    height: 516vh;
+    background-color: whitesmoke;
+   
+    background-size: cover;
+    background-position: center;
+    z-index: 100;
+}
+
+.Container3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(5px); 
+    z-index: -1; 
+}
+	    .ul3{
+	    	margin-top: 13px;;
+    		margin-bottom: 13px;
+    		margin-top: 20px;;
+	    }
+	    .li3{
+	    	list-style: none;display: 
+    		inline-block;
+	    }
+	    .li3 a{
+	    	color: black;
+    		font-size:18px;
+    		font-weight: bold;
+    		margin-right: 25px;
+	    }
+	    .button3{
+	    	background-color: maroon;
+    		margin-left: 10px;
+    		border-radius: 10px;
+    		padding: 10px;
+    		width: 120px;
+	    }
+	    .button3 a{
+	    	color:white;
+    		font-weight: bold;
+    		font-size: 15px;
+	    }
+	    .white-panel{
+        	position: absolute;
+        	width: 100%;
+        	background-image: url("img/s.jpg");
+        	height: 25vh;
+        	z-index: 1;
+        	border-style: inset;
+        }
+        .ex{
+        	position: absolute;
+    top: 15vh;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    margin-top: 20px;
+    color: white;
+    font-weight: bold;
+    width: 60%;
+    z-index: 2;
+        } 
+        .table{
+        	position: absolute;
+        	margin-top: 39.4vh;
+        	margin-left: 63.9%;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: lightgrey;
+        }
+        td{
+        	background-color: white;
+        }
+        .dis{
+        	position: absolute;
+        	z-index: 99;
+        	text-indent: 3em;
+        	line-height: 1.9;
+        	margin-left: 5vh;
+        	margin-right: 76vh;
+        	text-align: justify;
+        	margin-top: 37vh;
+        }
+         h3{
+        	position: absolute;
+        	z-index: 99;
+            margin-left: 5vh;
+        	margin-top: 30vh;
+        }
+        h4{
+        	position: absolute;
+        	z-index: 99;
+        	margin-left: 128.5vh;
+        	text-align: justify;
+        	margin-top: 34vh;
+        }
+        .white-panel2 {
+        	margin-top: 38.4vh;
+            position: absolute;
+            top: 0;
+            right: 3vh;
+            width: 35%;
+            height: 90.1%;
+            border-style: solid;
+            border-color: gray;
+            background-color: maroon;
+            opacity: 2; 
+            z-index: 0;
+        }
+        hr{
+        	position: absolute;
+        	z-index: 100;
+        	left: 3vh;
+        	top: 70vh;
+        	width: 123.5vh;
+        	background-color: gray;
+        	 margin: 10px 0;
+        	 border: none;
+            height: 3px;
+        }
+        .hr2{
+        	position: absolute;
+        	z-index: 100;
+        	left: 3vh;
+        	top: 143vh;
+        	width: 123.5vh;
+        	background-color: gray;
+        	 margin: 10px 0;
+        	 border: none;
+            height: 3px;
+        }
+         .hr3{
+        	position: absolute;
+        	z-index: 100;
+        	left: 3vh;
+        	top: 310vh;
+        	width: 123.5vh;
+        	background-color: gray;
+        	 margin: 10px 0;
+        	 border: none;
+            height: 3px;
+        }
+        .poage{
+        	position: absolute;
+        	margin-top: 82vh;
+        	margin-right: 76.5vh;
+        	margin-left: 5vh;
+        	text-align: justify;
+        	text-indent: 3em;
+        	line-height: 1.9;
+        
+        }
+        .k{
+        	position: absolute;
+        	margin-top: 76vh;
+        	font-size:3vh;
+        	margin-left: 5vh;
+        }
+        .economy{
+        	position: absolute;
+        	margin-left: 5vh;
+        	margin-top: 150vh;
+        	font-size: 4vh;
+        	z-index: 100;
+
+        	}
+        	.whitepanel_{
+        	position: absolute;
+        	margin-top: 149vh;
+        	left: 3.1vh;
+        	width: 123.5vh;
+        	background-color: gray;
+        	opacity: 0.7;
+        	height: 6vh;
+        	z-index: 99;
+        	border-style: inset;
+        }
+        .eco{
+        	position: absolute;
+    		margin-top: 154.5vh; 
+    		left: 3.1vh; 
+    		z-index: 99;
+    		border-style: inset;
+        }
+        .econ{
+        	position: absolute;
+        	margin-top: 195vh;
+        	margin-right: 76.5vh;
+        	margin-left: 5vh;
+        	text-align: justify;
+        	text-indent: 3em;
+        	line-height: 1.9;
+        	
+        }
+        .econ2{
+        	position: absolute;
+        	margin-top: 210vh;
+        	margin-right: 76.5vh;
+        	margin-left: 5vh;
+        	text-align: justify;
+        	line-height: 1.9;
+        }
+        .econ3{
+        	position: absolute;
+        	margin-top: 238vh;
+        	margin-right: 76.5vh;
+        	margin-left: 5vh;
+        	text-align: justify;
+        	line-height: 1.9;
+        }
+        
+        .econ4{
+        	position: absolute;
+        	margin-top: 265vh;
+        	margin-right: 76.5vh;
+        	margin-left: 5vh;
+        	text-align: justify;
+        	line-height: 1.9;
+        }
+        .econ5{
+        	position: absolute;
+        	margin-top: 296vh;
+        	margin-right: 76.5vh;
+        	margin-left: 5vh;
+        	text-align: justify;
+        	text-indent: 3em;
+        	line-height: 1.9;
+        }
+		.daveco{
+        	position: absolute;
+    		margin-top: 313.5vh; 
+    		left: 3.1vh; 
+    		z-index: 99;
+    		border-style: inset;
+        }
+        .daveco1{
+        	position: absolute;
+    		margin-top: 403.5vh; 
+    		left: 3.1vh; 
+    		z-index: 99;
+    		border-style: inset;
+        }
+        .davecon{
+        	position: absolute;
+        	margin-top: 355vh;
+        	margin-right: 76.5vh;
+        	margin-left: 5vh;
+        	text-align: justify;
+        	text-indent: 3em;
+        	line-height: 1.9;
+        	
+        }
+        .davecon1{
+        	position: absolute;
+        	margin-top: 445vh;
+        	margin-right: 76.5vh;
+        	margin-left: 5vh;
+        	text-align: justify;
+        	text-indent: 3em;
+        	line-height: 1.9;
+        	
+        }
+
+	</style>
+
+</head>
+<body>
+<div class="Container3">
+      
+	<nav class="navbar3">
+		<div class = "navdiv3">
+			<div class ="logo3"><p>Davao City</p></div>
+			<ul class ="ul3">
+				<li class = "li3"><a href="davao.html">Home</a></li>
+				<li class = "li3"><a href="history.html">History</a></li>
+				<li class = "li3"><a href="geography.html">Geography</a></li>
+				<li class = "li3"><a href="wheretogo.html">Attractions and Tourism</a></li>
+				<li class = "li3"><a href="demography.html">Demography/Economy</a></li>
+				<li class = "li3"><a href="univ.html">Schools/University</a></li>
+				<a href="https://www.youtube.com/watch?v=KeouUD65WoU"target="_blank">
+    			<button class="button3">Learn More</button>
+				</a>
+			</ul>
+			
+		</div>
+	</nav>
+
+	<div class="white-panel"></div>
+	<h1 class ="ex" style="font-size: 5vh;">DAVAO'S DEMOGRAPHY AND ECONOMY</h1>
+    <h1 class="k">Population by age group</h1>
+<div class="white-panel2"></div>
+
+
+
+
+	<div class="dis">
+		<p>Davao City is a coastal highly urbanized city in the Davao Region. Although administratively independent due to its distinction as highly urbanized city, Davao City is commonly grouped with the province of Davao del Sur. The city also serves as the regional center of the Davao Region.
+
+		The city has a land area of 2,443.61 square kilometers or 943.48 square miles. Its population as determined by the 2020 Census was 1,776,949. This represented 33.89% of the total population of the Davao Region. Based on these figures, the population density is computed at 727 inhabitants per square kilometer or 1,883 inhabitants per square mile.</p>
+	</div>
+ 	<hr>
+		<h3>Demographic profile of barangays</h3>
+		<h4>Davao City has 182 barangays as shown in the following table :</h4>
+
+
+
+
+
+
+
+	<div class="table">
+	<table>
+		
+		<tr>
+			<th>NAME</th>
+			<th>STATUS</th>
+			<th>POPULATION (2020)</th>
+		</tr>
+		<tr>
+			<td>Acacia</td>
+			<td>Barangay</td>
+			<td>6,014</td>
+		</tr>
+		<tr>
+			<td>Agdao</td>
+			<td>Barangay</td>
+			<td>6,957</td>
+		</tr>
+		<tr>
+			<td>Alambre</td>
+			<td>Barangay</td>
+			<td>2,952</td>
+		</tr>
+
+		<tr>
+			<td>Alejandra Navarro</td>
+			<td>Barangay</td>
+			<td>11,774</td>
+		</tr>
+		<tr>
+			<td>Alfonso Angliongto Sr.</td>
+			<td>Barangay</td>
+			<td>14,962</td>
+		<tr>	
+			<td>Angalan</td>
+			<td>Barangay</td>
+			<td>2,741</td>
+		<tr>
+			<td>Atan-awe</td>
+			<td>Barangay</td>
+			<td>1,444</td>
+		</tr>
+		
+		<tr>
+			<td>Baganihan</td>
+			<td>Barangay</td>
+			<td>1,507</td>
+		</tr>
+
+		<tr>
+			<td>Bago Aplaya</td>
+			<td>Barangay</td>
+			<td>18,930</td>
+		</tr>
+
+		<tr>
+			<td>Bago Gallera</td>
+			<td>Barangay</td>
+			<td>19,201</td>
+		</tr>
+
+        <tr> 
+        	 <td>Bago Oshiro</td>
+        	 <td>Barangay</td>
+        	 <td>17,717</td>
+         </tr>
+
+          <tr> 
+        	 <td>Baguio</td>
+        	 <td>Barangay</td>
+        	 <td>4,801</td>
+         </tr>
+
+          <tr> 
+        	 <td>Balengaeng</td>
+        	 <td>Barangay</td>
+        	 <td>2,390</td>
+         </tr>
+
+          <tr> 
+        	 <td>Baliok</td>
+        	 <td>Barangay</td>
+        	 <td>17,165</td>
+         </tr>
+
+          <tr> 
+        	 <td>Bangkas Heights</td>
+        	 <td>Barangay</td>
+        	 <td>8,056</td>
+         </tr>
+          <tr> 
+        	 <td>Bantol</td>
+        	 <td>Barangay</td>
+        	 <td>2,334</td>
+         </tr>
+
+          <tr> 
+        	 <td>Baracatan</td>
+        	 <td>Barangay</td>
+        	 <td>2,965</td>
+         </tr>
+
+          <tr> 
+        	 <td>Barangay 10-A</td>
+        	 <td>Barangay</td>
+        	 <td>7,867</td>
+         </tr>
+
+          <tr> 
+        	 <td>Barangay 11-B</td>
+        	 <td>Barangay</td>
+        	 <td>2,152</td>
+         </tr>
+
+          <tr> 
+        	 <td>Barangay 12-B</td>
+        	 <td>Barangay</td>
+        	 <td>1,154</td>
+         </tr>
+
+          <tr> 
+        	 <td>Barangay 13-B</td>
+        	 <td>Barangay</td>
+        	 <td>366</td>
+         </tr>
+
+          <tr> 
+        	 <td>Barangay 14-B</td>
+        	 <td>Barangay</td>
+        	 <td>1,854</td>
+         </tr>
+
+          <tr> 
+        	 <td>Barangay 15-B</td>
+        	 <td>Barangay</td>
+        	 <td>2,603</td>
+         </tr>
+
+          <tr> 
+        	 <td>Barangay 16-B</td>
+        	 <td>Barangay</td>
+        	 <td>441</td>
+         </tr>
+
+          <tr> 
+        	 <td>Barangay 17-B</td>
+        	 <td>Barangay</td>
+        	 <td>906</td>
+         </tr>
+
+          <tr> 
+        	 <td>Barangay 18-B</td>
+        	 <td>Barangay</td>
+        	 <td>1,231</td>
+         </tr>
+
+          <tr> 
+        	 <td>Barangay 19-B</td>
+        	 <td>Barangay</td>
+        	 <td>30,752</td>
+         </tr>
+
+          <tr> 
+        	 <td>Barangay 1-A</td>
+        	 <td>Barangay</td>
+        	 <td>3,089</td>
+         </tr>
+
+          <tr> 
+        	 <td>Barangay 20-B</td>
+        	 <td>Barangay</td>
+        	 <td>7,643</td>
+         </tr>
+
+          <tr> 
+        	 <td>Barangay 21-C</td>
+        	 <td>Barangay</td>
+        	 <td>17,030</td>
+         </tr>
+
+          <tr> 
+        	 <td>Barangay 22-C</td>
+        	 <td>Barangay</td>
+        	 <td>2,034</td>
+         </tr>
+
+          <tr> 
+        	 <td>Barangay 23-C</td>
+        	 <td>Barangay</td>
+        	 <td>1,922</td>
+         </tr>
+
+          <tr> 
+        	 <td>Barangay 24-C</td>
+        	 <td>Barangay</td>
+        	 <td>1,681</td>
+         </tr>
+
+          <tr> 
+        	 <td>Barangay 25-C</td>
+        	 <td>Barangay</td>
+        	 <td>2,110</td>
+         </tr>
+
+          <tr> 
+        	 <td>Barangay 26-C</td>
+        	 <td>Barangay</td>
+        	 <td>3,133</td>
+         </tr>
+
+          <tr> 
+        	 <td>Barangay 27-C</td>
+        	 <td>Barangay</td>
+        	 <td>703</td>
+         </tr>
+
+          <tr> 
+        	 <td>Barangay 28-C</td>
+        	 <td>Barangay</td>
+        	 <td>	2,935</td>
+         </tr>
+
+          <tr> 
+        	 <td>Barangay 29-C</td>
+        	 <td>Barangay</td>
+        	 <td>1,057</td>
+         </tr>
+
+          <tr> 
+        	 <td>Barangay 30-C</td>
+        	 <td>Barangay</td>
+        	 <td>8,481</td>
+         </tr>
+
+          <tr> 
+        	 <td>Barangay 31-D</td>
+        	 <td>Barangay</td>
+        	 <td>1,644</td>
+         </tr>
+
+          <tr> 
+        	 <td>Barangay 32-D</td>
+        	 <td>Barangay</td>
+        	 <td>1,827</td>
+         </tr>
+
+          <tr> 
+        	 <td>Barangay 33-D</td>
+        	 <td>Barangay</td>
+        	 <td>1,074</td>
+         </tr>
+
+          <tr> 
+        	 <td>Barangay 34-D</td>
+        	 <td>Barangay</td>
+        	 <td>409</td>
+         </tr>
+
+          <tr> 
+        	 <td>Barangay 35-D</td>
+        	 <td>Barangay</td>
+        	 <td>1,220</td>
+         </tr>
+
+          <tr> 
+        	 <td>Barangay 36-D</td>
+        	 <td>Barangay</td>
+        	 <td>5,771</td>
+         </tr>
+
+          <tr> 
+        	 <td>Barangay 37-D</td>
+        	 <td>Barangay</td>
+        	 <td>1,289</td>
+         </tr>
+
+          <tr> 
+        	 <td>Barangay 38-D</td>
+        	 <td>Barangay</td>
+        	 <td>4,253</td>
+         </tr>
+
+          <tr> 
+        	 <td>Barangay 39-D</td>
+        	 <td>Barangay</td>
+        	 <td>407</td>
+         </tr>
+
+          <tr> 
+        	 <td>Barangay 40-D</td>
+        	 <td>Barangay</td>
+        	 <td>2,159</td>
+         </tr>
+
+          <tr> 
+        	 <td>Barangay 4-A</td>
+        	 <td>Barangay</td>
+        	 <td>1,692</td>
+         </tr>
+
+          <tr> 
+        	 <td>Barangay 5-A</td>
+        	 <td>Barangay</td>
+        	 <td>11,160</td>
+         </tr>
+
+          <tr> 
+        	 <td>Barangay 6-A</td>
+        	 <td>Barangay</td>
+        	 <td>2,217</td>
+         </tr>
+
+          <tr> 
+        	 <td>Barangay 7-A</td>
+        	 <td>Barangay</td>
+        	 <td>3,362</td>
+         </tr>
+
+          <tr> 
+        	 <td>Barangay 8-A</td>
+        	 <td>Barangay</td>
+        	 <td>15,259</td>
+         </tr>
+
+          <tr> 
+        	 <td>Barangay 9-A</td>
+        	 <td>Barangay</td>
+        	 <td>6,807</td>
+         </tr>
+
+          <tr> 
+        	 <td>Bato</td>
+        	 <td>Barangay</td>
+        	 <td>11,930</td>
+         </tr>
+
+          <tr> 
+        	 <td>Bayabas</td>
+        	 <td>Barangay</td>
+        	 <td>3,489</td>
+         </tr>
+
+          <tr> 
+        	 <td>Biao Escuela</td>
+        	 <td>Barangay</td>
+        	 <td>4,263</td>
+         </tr>
+
+          <tr> 
+        	 <td>Biao Guianga</td>
+        	 <td>Barangay</td>
+        	 <td>4,581</td>
+         </tr>
+
+          <tr> 
+        	 <td>Biao Joaquin</td>
+        	 <td>Barangay</td>
+        	 <td>2,333</td>
+         </tr>
+
+          <tr> 
+        	 <td>Binugao</td>
+        	 <td>Barangay</td>
+        	 <td>8,641</td>
+         </tr>
+
+          <tr> 
+        	 <td>Bucana</td>
+        	 <td>Barangay</td>
+        	 <td>80,538</td>
+         </tr>
+
+          <tr> 
+        	 <td>More...</td>
+        	 <td>More...</td>
+        	 <td>More...</td>
+         </tr>
+
+          <tr> 
+        	 <td colspan="2">Davao Total Barangay : 182 </td>
+        	 <td>Total : 1,776,949</td>
+         </tr>
+
+         
+
+
+
+
+
+     
+	</table>
+</div>
+<div class="poage">
+	<p>According to the 2015 Census, the age group with the highest population in Davao City is 15 to 19, with 169,826 individuals. Conversely, the age group with the lowest population is 80 and over, with 8,935 individuals.<br></p>
+	<p>Combining age groups together, those aged 14 and below, consisting of the young dependent population which include infants/babies, children and young adolescents/teenagers, make up an aggregate of 30.38% (496,058). Those aged 15 up to 64, roughly, the economically active population and actual or potential members of the work force, constitute a total of 65.60% (1,071,196). Finally, old dependent population consisting of the senior citizens, those aged 65 and over, total 4.03% (65,737) in all.</p>
+
+
+	<p>The computed Age Dependency Ratios mean that among the population of Davao City, there are 46 youth dependents to every 100 of the working age population; there are 6 aged/senior citizens to every 100 of the working population; and overall, there are 52 dependents (young and old-age) to every 100 of the working population.
+
+	The median age of 24 indicates that half of the entire population of Davao City are aged less than 24 and the other half are over the age of 24.</p>
+</div>
+
+<hr class="hr2">
+
+<div class="whitepanel_"></div>
+<div class="economy">
+	<h5>Economy</h5>
+</div>
+
+ <div class="eco">
+        <img src="img/eco.jpg" alt="no image" style="width: 122.4vh; height: 38vh;">
+    </div>
+
+<div class="econ">
+	<p>The economy of Davao City, located in the southern part of the Philippines, has made significant strides over the years. As the capital city of the Davao region, it serves as the gateway to the entire Mindanao island. Let’s delve into some key points about Davao’s economy:</p></div>
+<div class="econ2">
+	<h2>Economic Performance in 2021</h2>
+	<ul>
+		<li>In 2021, the Davao Region experienced a remarkable economic recovery, recording a growth rate of 5.9%. This substantial increase came after a challenging year in 2020 when the region faced a negative growth rate of 7.5%</li>
+		<li>The region’s economy was valued at PHP 882 billion in 2021, up from approximately PHP 833.2 billion in 2020 ,an increase of PHP 48.8 billion.</li>
+	</ul>
+</div>
+
+<div class="econ3">
+	<h2>Fast-Growing Regional Economy:</h2>
+	<ul>
+		<li>According to the National Economic and Development Authority (NEDA), the year 2022 was characterized by robust growth and resilience for the Davao Region.</li>
+		<li>The region’s economy grew by an impressive 8.1%, positioning it as the third fastest-growing regional economy in the Philippines. It shares this distinction with Central Luzon and the Bicol Region.</li>
+	</ul>
+</div>
+
+<div class="econ4">
+	<h2>Diverse and United City:</h2>
+	<ul>
+		<li>Davao City is home to 11 tribes, each contributing to its rich cultural tapestry. Despite its diversity, the city stands united as a center of development in Mindanao.</li>
+		<li>Serving as the entry point for the Brunei Darussalam – Indonesia – Malaysia – Philippines East ASEAN Growth Area, Davao City plays a pivotal role in regional connectivity and progress.</li>
+	</ul>
+</div>
+
+<div class="econ5">
+	<p>Davao’s economy continues to thrive, reflecting both resilience and growth. Its strategic location, cultural diversity, and collaborative efforts contribute to its upward trajectory.</p>
+</div>
+
+<hr class="hr3">
+
+<div class="daveco">
+        <img src="img/daveco.jpg" alt="no image" style="width: 122.4vh; height: 38vh;">
+    </div>
+<div class="daveco1">
+        <img src="img/daveco2.jpg" alt="no image" style="width: 122.4vh; height: 38vh;">
+    </div>
+
+<div class="davecon">
+	<p><strong>Davao City</strong> is the premier city and economic hub of Mindanao. The City's steadily growing economic activity, skilled workforce, urbanization and modern amenities have made Davao City the most important economy in the Mindanao, and the third most important urban center in the Philippines. Current revenue statistics show Davao City is the <strong>fifth-richest city in the Philippines</strong> in terms of local income and IRA – the only city outside Manila in the top five.<br></p>
+	<p><strong>Davao City</strong> operates on an economic system that is market-oriented. Pricing mechanisms remain regulated in a few sectors to protect its consumers, particularly on basic commodities. The competitiveness of the market has been enhanced and sustained through the dismantling of protection for “infant industries”, and the breakdown of industries with monopolistic or cartel tendencies.
+</p></div>
+
+<div class="davecon1">
+	<p>In the international scene, the economy of <strong>Davao City</strong> has opened its doors to global competition. In the last two decades, the economy has steadily grown through tariff and private investments. With close to 1.5-Million people as primary market base, the city has become conducive to business. Many of the country’s top 200 companies have established their offices and made substantial investments in the city. The steady Inflow of investments has been remarkable in the last ten years. </p>
+	<p>Exports has turned into a billion dollar industry with an ever growing market for its local products. The abundant supply of banana and pineapple products are among the country’s leading export commodities. A net exporter since 1987, Davao City largely contributed in making the Philippines as the world’s top exporter of papaya, mangosteen, and even flowers.</p>
+	<p>The productive linkages between established businesses in <strong>Davao City</strong>  have reinforced the competitive quality of life of its people. Since 1993, the city has consistently maintained a single digit inflation rate. The low inflation rate is indicative of the remarkable gains from Davao City’s sustained competitiveness, both in the local and international market, nurtured by the high level of responsiveness of its local government in facilitating business-friendly initiatives, and in ensuring a peaceful and prosperous environment conducive to investments.</p>
+</div>
+
+
+</div>
+</body>
+</html>
